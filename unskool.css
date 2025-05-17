@@ -1,0 +1,37 @@
+body {
+    background-color: peachpuff;
+    font-family: 'Arial', sans-serif;
+}
+
+.hero {
+    background: linear-gradient(135deg, #6f42c1, #8a63d2);
+    color: white;
+    padding: 60px 20px;
+}
+
+/* Card hover effect */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure carousel images are responsive */
+.carousel-inner img {
+    object-fit: cover;
+    height: 400px; /* Adjustable based on design preference */
+}
+
+/* Custom adjustments for smaller screens */
+@media (max-width: 768px) {
+    .hero {
+        padding: 40px 15px;
+    }
+    
+    .carousel-inner img {
+        height: 250px;
+    }
+}
